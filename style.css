@@ -728,24 +728,27 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px; /* Reduced gap for mobile */
-  overflow-x: auto; /* Allows horizontal scrolling if needed */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  padding-bottom: 5px; /* Space for scrollbar */
+  gap: 12px;
+  padding: 5px 0; /* Add some padding */
+  min-width: fit-content; /* Ensures nav doesn't shrink too much */
+  width: 100%;
 }
 
 nav a {
   color: var(--text-light);
   text-decoration: none;
-  font-size: 0.95rem; /* Slightly smaller font */
+  font-size: 1rem;
   font-weight: 600;
-  padding: 8px 10px; /* Reduced padding */
+  padding: 8px 12px;
   border-radius: 6px;
   transition: background-color 0.3s ease;
   white-space: nowrap; /* Prevents text wrapping */
@@ -753,27 +756,27 @@ nav a {
 }
 
 /* Hide scrollbar but keep functionality */
-nav::-webkit-scrollbar {
+header::-webkit-scrollbar {
   display: none;
 }
 
 /* Media Queries for Navigation */
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   nav {
-    gap: 12px;
+    justify-content: flex-start; /* Left-align on very small screens */
+    gap: 8px;
   }
   
   nav a {
-    font-size: 1rem;
-    padding: 8px 12px;
+    font-size: 0.9rem;
+    padding: 6px 10px;
   }
 }
 
 @media (min-width: 768px) {
   nav {
+    justify-content: center;
     gap: 16px;
-    overflow-x: visible; /* Disable scrolling on larger screens */
-    padding-bottom: 0;
   }
   
   nav a {
