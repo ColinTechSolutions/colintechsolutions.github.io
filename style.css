@@ -781,3 +781,41 @@ nav::-webkit-scrollbar {
     padding: 8px 16px;
   }
 }
+/* Hero Stats Section - Fix for mobile alignment */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Reduced gap for mobile */
+  margin-top: 60px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.stat-item {
+  text-align: center;
+  min-width: 100px; /* Prevents items from becoming too narrow */
+  flex: 1; /* Allows items to grow equally */
+}
+
+/* Adjust stats layout for very small screens */
+@media (max-width: 400px) {
+  .hero-stats {
+    gap: 10px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ensure stats stay in a single row when possible */
+@media (min-width: 480px) {
+  .hero-stats {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+}
