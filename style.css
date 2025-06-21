@@ -728,27 +728,24 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  overflow-x: auto; /* Allows horizontal scrolling if needed */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  padding: 5px 0; /* Add some padding */
-  min-width: fit-content; /* Ensures nav doesn't shrink too much */
-  width: 100%;
+  gap: 8px; /* Reduced gap for mobile */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  padding-bottom: 5px; /* Space for scrollbar */
 }
 
 nav a {
   color: var(--text-light);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.95rem; /* Slightly smaller font */
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 8px 10px; /* Reduced padding */
   border-radius: 6px;
   transition: background-color 0.3s ease;
   white-space: nowrap; /* Prevents text wrapping */
@@ -756,69 +753,31 @@ nav a {
 }
 
 /* Hide scrollbar but keep functionality */
-header::-webkit-scrollbar {
+nav::-webkit-scrollbar {
   display: none;
 }
 
 /* Media Queries for Navigation */
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   nav {
-    justify-content: flex-start; /* Left-align on very small screens */
-    gap: 8px;
+    gap: 12px;
   }
   
   nav a {
-    font-size: 0.9rem;
-    padding: 6px 10px;
+    font-size: 1rem;
+    padding: 8px 12px;
   }
 }
 
 @media (min-width: 768px) {
   nav {
-    justify-content: center;
     gap: 16px;
+    overflow-x: visible; /* Disable scrolling on larger screens */
+    padding-bottom: 0;
   }
   
   nav a {
     font-size: 1.1rem;
     padding: 8px 16px;
-  }
-}
-/* Hero Stats Section - Fix for mobile alignment */
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Reduced gap for mobile */
-  margin-top: 60px;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.stat-item {
-  text-align: center;
-  min-width: 100px; /* Prevents items from becoming too narrow */
-  flex: 1; /* Allows items to grow equally */
-}
-
-/* Adjust stats layout for very small screens */
-@media (max-width: 400px) {
-  .hero-stats {
-    gap: 10px;
-  }
-  
-  .stat-number {
-    font-size: 2rem;
-  }
-  
-  .stat-label {
-    font-size: 0.9rem;
-  }
-}
-
-/* Ensure stats stay in a single row when possible */
-@media (min-width: 480px) {
-  .hero-stats {
-    flex-wrap: nowrap;
-    gap: 30px;
   }
 }
