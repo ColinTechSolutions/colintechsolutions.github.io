@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin's Tech Solutions - Professional Computer Repair Services</title>
+    <meta name="description" content="Professional computer repair, hardware installation, and technical support services. Fast, reliable tech repairs you can trust.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Colin's Tech Solutions</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Fast, Reliable Tech Repairs<br><span class="hero-highlight">You Can Trust</span></h1>
+            <p class="hero-subtitle">Serving your tech needs with expert support and affordable solutions</p>
+            <div class="hero-buttons">
+                <button class="cta-button primary" onclick="scrollToSection('services')">
+                    <i class="fas fa-tools"></i>
+                    View Services
+                </button>
+                <button class="cta-button secondary">
+                    <i class="fas fa-phone"></i>
+                    Get Quote
+                </button>
+            </div>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Expert Repairs</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Same-Day Service</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Honest Pricing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Expert Services</h2>
+            <p class="section-subtitle">Comprehensive tech support solutions for all your computer and device needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon blue">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Virus & Malware Removal</h3>
+                    <p>Complete system cleanup and protection against viruses, malware, and security threats.</p>
+                    <div class="service-price">Starting at $50</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon green">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>System Performance Optimization</h3>
+                    <p>Speed up slow computers with comprehensive diagnostics, cleanup, and performance tuning.</p>
+                    <div class="service-price">Starting at $30</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon purple">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Screen & Battery Replacement</h3>
+                    <p>Professional laptop screen repairs and battery replacements with quality parts.</p>
+                    <div class="service-price">Starting at $120</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon yellow">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h3>RAM & SSD Upgrades</h3>
+                    <p>Boost your computer's performance with memory and storage upgrades.</p>
+                    <div class="service-price">Starting at $80</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon red">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Custom PC Builds</h3>
+                    <p>Custom computer builds and component installations tailored to your needs.</p>
+                    <div class="service-price">Quote on Request</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon cyan">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Software Setup & OS Installation</h3>
+                    <p>Operating system installations, software setup, and system optimization.</p>
+                    <div class="service-price">Starting at $60</div>
+                </div>
+            </div>
+            <div class="services-footer">
+                <p>Don't see what you need? We offer many more tech services!</p>
+                <button class="cta-button secondary">
+                    <i class="fas fa-question-circle"></i>
+                    Ask About Other Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Transparent Pricing</h2>
+            <p class="section-subtitle">No hidden fees, no surprises. Here are our most common service rates.</p>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-icon blue">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Virus & Malware Removal</h3>
+                    <div class="price">$50</div>
+                    <p>Complete system scan and cleanup, malware removal, and antivirus setup.</p>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Ideal for slow or infected systems.</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-icon green">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>System Optimization & Cleanup</h3>
+                    <div class="price">$30</div>
+                    <p>Improve performance, remove junk files, disable startup bloat, and speed up your system.</p>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Great for older or sluggish PCs.</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-icon purple">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Screen or Battery Replacement</h3>
+                    <div class="price">Labor starting at $60</div>
+                    <p>Parts priced separately. Total cost depends on device model and parts availability.</p>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Example: Most laptop screens range $100-$300 (parts + labor).</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-icon yellow">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h3>RAM or SSD Upgrades</h3>
+                    <div class="price">Labor starting at $40</div>
+                    <p>Parts sold separately or provided by the customer. Includes full installation, system optimization, and testing.</p>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Example: 500GB SSD upgrade with labor typically ~$90 total.</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-icon red">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Custom PC Builds</h3>
+                    <div class="price">Quotes available on request</div>
+                    <p>Tailored PC builds for gaming, productivity, or media use. Includes consultation, build, and testing.</p>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Build labor typically $50-$150 depending on complexity.</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-icon cyan">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Operating System & Software Setup</h3>
+                    <div class="price">$60</div>
+                    <p>Includes Windows installation, drivers, system updates, antivirus, and basic software setup.</p>
+                    <div class="pricing-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Fresh start for your computer.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-footer">
+                <p>* Prices may vary based on device model and complexity. Free quotes available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section class="payment-section">
+        <div class="container">
+            <h2 class="section-title">Accepted Payment Methods</h2>
+            <p class="section-subtitle">We accept multiple convenient payment options</p>
+            <div class="payment-grid">
+                <div class="payment-card">
+                    <div class="payment-icon blue">
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                    <span>PayPal</span>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon purple">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <span>Venmo</span>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon green">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <span>Cash App</span>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon yellow">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <span>Cash</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to fix your tech problems? Contact us for fast, reliable service with a friendly touch.</p>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <div class="contact-form-header">
+                        <h3>Send Us a Message</h3>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reason">Reason for Inquiry</label>
+                            <select id="reason" name="reason">
+                                <option value="">Select an option</option>
+                                <option value="repair">Computer Repair</option>
+                                <option value="upgrade">Hardware Upgrade</option>
+                                <option value="diagnostics">Diagnostics</option>
+                                <option value="custom-build">Custom PC Build</option>
+                                <option value="software">Software Issues</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe your tech issue or what service you need..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        <h3>Contact Information</h3>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon blue">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:colins.tech.solutions@gmail.com" class="contact-link">
+                                colins.tech.solutions@gmail.com
+                            </a>
+                            <div class="contact-actions">
+                                <button class="action-btn copy" onclick="copyToClipboard('colins.tech.solutions@gmail.com', 'email')">
+                                    <i class="fas fa-copy"></i>
+                                    Copy
+                                </button>
+                                <button class="action-btn email">
+                                    <i class="fas fa-envelope"></i>
+                                    Send Email
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon green">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+16856895424" class="contact-link">
+                                (685) 689-5424
+                            </a>
+                            <div class="contact-actions">
+                                <button class="action-btn copy" onclick="copyToClipboard('(685) 689-5424', 'phone')">
+                                    <i class="fas fa-copy"></i>
+                                    Copy
+                                </button>
+                                <button class="action-btn call">
+                                    <i class="fas fa-phone"></i>
+                                    Call Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon purple">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Response Time</span>
+                            <p class="response-text">Usually within 24 hours</p>
+                            <p class="response-subtext">Emergency repairs available</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon orange">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Service Area</span>
+                            <p class="response-text">Local pickup & delivery available</p>
+                            <p class="response-subtext">Remote support also offered</p>
+                        </div>
+                    </div>
+                    
+                    <div class="privacy-notice">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Your privacy is protected. We never share your information.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Colin's Tech Solutions. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Back to Top</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="toast-message">Copied to clipboard!</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
